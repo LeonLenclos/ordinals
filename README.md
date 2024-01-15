@@ -6,13 +6,13 @@ Ordinals representation with directories
 
 Download **ordinals.sh** :
 
-```
-wget https://raw.githubusercontent.com/LeonLenclos/ordinals/main/README.md
+```sh
+wget https://raw.githubusercontent.com/LeonLenclos/ordinals/main/ordinals.sh
 ```
 
 Run the script with the number of directories you want to create :
 
-```
+```sh
 sh ordinals.sh 10 #This will create 10 directories
 ```
 
