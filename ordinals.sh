@@ -12,7 +12,7 @@ n=$1;
 mkdir $i;
 i=$((i+1))
 
-while [ $i -le $n ]
+while [ $i -lt $n ]
 do
   mkdir $i;
   ln -s "../$((i-1))/" "${i}/$((i-1))";
