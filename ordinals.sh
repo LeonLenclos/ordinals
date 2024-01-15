@@ -10,11 +10,15 @@ i="0";
 n=$1;
 
 mkdir $i;
+i=$((i+1))
 
 while [ $i -le $n ]
 do
-  ((i++));
   mkdir $i;
   ln -s "../$((i-1))/" "${i}/$((i-1))";
-  cp -r $((i-1))/* "${i}/"
+  if [ $i -gt 1 ]
+  then
+    cp -r $((i-1))/* "${i}/"
+  fi
+  i=$((i+1))
 done;
